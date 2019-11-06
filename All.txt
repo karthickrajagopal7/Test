@@ -1,0 +1,1346 @@
+x=int(input('Enter the 1st number'))
+y=int(input('Enter the 2nd number'))
+z=x+y
+print(z)
+
+#############################################################################################################################
+
+a=input('Enter the 1st character')
+b=input('Enter the 2nd character')
+c=a+b
+print(c)
+
+
+#############################################################################################################################
+
+a=input('Enter the character')[0]
+print(a)
+
+
+#############################################################################################################################
+
+Evaluate Case-
+
+Test=eval(input('Enter the expression'))
+print(Test)
+
+
+#############################################################################################################################
+
+If & Elif Case-
+
+x=int(input('Enter the Number'))
+if x%2==0:
+    print('Number is Even')
+    if x>=5:
+        print('Greater')
+    else:
+        print('Lesser')
+else:
+    print('Number is Odd')
+
+
+#############################################################################################################################
+
+Elif Case-
+
+x=int(input('Enter the number'))
+if x==1:
+    print('ONE')
+elif x==2:
+    print('TWO')
+elif x==3:
+    print('THREE')
+elif x==3:
+    print('THREE')
+elif x==4:
+    print('FOUR')
+else:
+    print("Out of Range")
+
+print('Bye')
+
+
+#############################################################################################################################
+
+While Case-
+
+i=int(input('Enter the number'))
+while i<=7:
+    print('KARTHI MAMA')
+    i = i+1
+k=int(input('Enter the number'))
+while k>=1:
+    print('JAYA')
+    k=k-1
+
+
+#############################################################################################################################
+
+Nested While Case-
+
+i=int(input('Enter the number'))
+while i<=5:
+    print('Karthi ',end="")
+    j=int(input('Enter the number'))
+    while j<=5:
+        print('Jaya ',end="")
+        j=j+1
+    print()
+    i = i + 1
+print('Bye')
+
+
+#############################################################################################################################
+
+For Case-
+
+x = ['karthi','jaya',25]
+for i in x:
+    print(i)
+
+print()
+print('nextprogram')
+
+y = 'KARTHICK'
+for j in y:
+    print(j)
+print()
+print('nextprogram')
+
+for k in [2.2,'maya']:
+    print(k)
+print()
+print('nextprogram')
+
+for m in range(3):
+    print(m)
+print()
+print('nextprogram')
+
+for n in range(12,15,2):
+    print(n)
+print()
+print('nextprogram')
+
+for o in range(20,15,-2):
+    print(o)
+print()
+print('nextprogram')
+
+for p in range(1,20):
+    if p%2!=0:
+        print(p)
+print()
+
+
+#############################################################################################################################
+
+Pass Case-
+
+for i in range(0,10):
+    if i%2!=0:
+        pass
+    else:
+        print(i)
+
+print("PASS STATEMENT - BYEEEE")
+
+
+#############################################################################################################################
+
+Break While Case-
+
+av = 5
+x=int(input("How many Candies do you want ? "))
+i = 1
+while i<=x:
+    print('CANDY')
+    i+=1
+    if i>av:
+        print('OUT OF STOCK')
+        break
+print("THANKS !!")
+
+
+#############################################################################################################################
+
+Continue Case-
+
+for i in range (1,20):
+    if i%3==0 and i%5==0:
+        continue
+
+    print(i)
+
+
+#############################################################################################################################
+
+Break For Case-
+
+av = 5
+x=int(input("How many Candies do you want ? "))
+for i in range(x):
+    if i>=av:
+        print('OUT OF STOCK')
+        break
+    print('CANDY')
+print('Thanks')
+
+
+#############################################################################################################################
+
+Pass Case-
+
+for i in range(0,10):
+    if i%2!=0:
+        pass
+    else:
+        print(i)
+
+print("PASS STATEMENT - BYEEEE")
+
+
+#############################################################################################################################
+
+Pattern Case- (Different Printing Patterns)
+
+
+
+print("PRINTING PATTERN $")
+for i in range(4):
+    for j in range(4):
+        print("$ ",end="")
+    print()
+
+print()
+print("PRINTING PATTERN #")
+for i in range(4):
+    for j in range(i+1):
+        print("# ",end="")
+    print()
+
+print()
+print("PRINTING PATTERN &")
+for i in range(4):
+    for j in range(4-i ):
+        print("& ",end="")
+    print()
+
+
+print("PRINTING PATTERN 9")
+for i in range(5):
+    for j in range(i+1):
+        print("9 ",end="")
+    print()
+for i in range(4):
+    for j in range(4-i):
+        print("9 ",end="")
+    print()
+
+
+
+
+
+@@@@@@@@@@ Printing Pattern of Triangle @@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+print("Printing Pattern of Triangle")
+
+
+num=int(input("Enter the Number of rows "))
+for i in range(0,num):
+    for j in range(0,num-i-1):
+        print(end=" ")
+    for j in range(0,i+1):
+        print("*",end=" ")
+    print()
+
+
+
+print("Printing Pattern of Inverse Triangle")
+
+
+num=int(input("Enter the Number of rows "))
+for i in range(num,0,-1):
+    for j in range(0,num-i):
+        print(end=" ")
+    for j in range(0,i):
+        print("*",end=" ")
+    print()
+
+
+
+
+print("Printing Pattern of Traiange & Inverse Triangle")
+
+
+num=int(input("Enter the Number of rows "))
+for i in range(0,num):
+    for j in range(0,num-i-1):
+        print(end=" ")
+    for j in range(0,i+1):
+        print("*",end=" ")
+    print()
+for i in range(num,0,-1):
+    for j in range(0,num-i):
+        print(end=" ")
+    for j in range(0,i):
+        print("*",end=" ")
+    print()
+
+
+
+%%%%%%%%%%%%%%%%% Simple way in cmd Promt %%%%%%%%%%%%%%%%%
+
+
+num=int(input("Enter the Number of rows "))
+def pyramid(num):
+    for i in range(num):
+        print(" "(num-i-1)+"*"*(i+1))
+
+
+num=int(input("Enter the Number of rows "))
+def pyramid(num):
+    for i in range(num):
+        print(" "(num-i-1)+"*"*(2*i+1))
+
+
+
+@@@@@@@@@ Printing Triangle Alternate way @@@@@@@@@@@@@@@
+
+print("PRINTING SQUARE")
+
+num=int(input("Enter the Number of rows "))
+for i in range(0,num):
+    print("3"*num)
+
+
+print("PRINTING right angled triangle")
+
+num=int(input("Enter the Number of rows "))
+for i in range(num):
+    print("&"*(i+1))
+
+print("PRINTING PYRAMID")
+
+num=int(input("Enter the Number of rows "))
+for i in range(0,num):
+    print(" "*(num-i)+"& "*(i+1))
+
+print("PRINTING left  angled triangle")
+
+num=int(input("Enter the Number of rows "))
+for i in range(0,num):
+    print("  "*(num-i)+"& "*(i+1))
+
+print("PRINTING DIAMOND SHAPE")
+
+num=int(input("Enter the Number of rows "))
+for i in range(0,num):
+    print(" "*(num-i)+"& "*(i+1))
+for j in range(num-1,0,-1):
+    print(" "*(num-j)+" &"*(j))
+
+print("PRINTING INVERTED TRIANGLE")
+
+num=int(input("Enter the Number of rows "))
+"""for i in range(0,num):
+    print(" "*(num-i)+"& "*(i+1))"""
+for j in range(num,0,-1):
+    print(" "*(num-j)+" &"*(j))
+
+print("PRINTING ARROW SHAPE")
+
+num=int(input("Enter the Number of rows "))
+for i in range(0,num):
+    print("& "*(i+1))
+for j in range(num-1,0,-1):
+    print("& "*(j))
+
+print("PRINTING HEART")
+
+for row in range (6):
+    for col in range (7):
+        if (row==0 and col%3!=0) or (row==1 and col%3==0) or (row-col==2) or (row+col==8):
+            print("*", end="")
+        else:
+            print(end=" ")
+    print()
+
+
+####################################################################################################################################
+
+
+print("PRINTING PATTERN TRIANGLE")
+
+
+def triangle(n):
+    k = 2 * n - 2
+    for i in range(0, n):
+        for j in range(0, k):
+            print(end=" ")
+        k = k - 1
+        for j in range(0, i + 1):
+            print("* ", end="")
+        print("\r")
+n = 5
+triangle(n)
+
+
+print("PRINTING PATTERN TRIANGLE")
+
+n = 5
+triangle(n)
+def triangle(n):
+    k = 2 * n - 2
+    for i in range(0, n):
+        for j in range(0, k):
+            print(end=" ")
+        k = k - 1
+        for j in range(0, i + 1):
+            print("* ", end="")
+        print("\r")
+
+
+
+
+n = 5
+triangle(n)
+def triangle(n):
+    k = 2 * n + 2
+    for i in range(n, 0):
+        for j in range(0, k):
+            print(end=" ")
+        k = k + 1
+        for j in range(0, i + 1):
+            print("* ", end="")
+        print("\r")
+
+
+
+#############################################################################################################################
+
+__init__ Case-
+
+
+class computer:
+    def __init__(self,cpu,ram):
+	"""__init__ automatically calls/takes the arguments"""
+        self.cpu = cpu
+        self.ram = ram
+        print(self.cpu, self.ram)
+        
+    def config(self):
+	"""Manual call required"""
+        print(self.cpu, self.ram)
+
+com1 = computer('i5', 16)
+com2 = computer('i10', '128gb')
+
+com1.config()
+com2.config()
+
+**************************__init__ case2:****************************************
+
+class computer:
+    def __init__(self, cpu, ram):
+        self.cpu = cpu
+        self.ram = ram
+com1 = computer('i5', 16)
+com2 = computer('i10', '128gb')
+print(com1.cpu)
+
+
+*****************************__init__ case3: to update a value*************************
+class computer:
+    def __init__(self):
+        self.cpu = 'i5'
+        self.ram = 16
+    def update(self):
+        self.cpu='i10'
+
+c1 = computer()
+c2 = computer()
+
+c2.update()
+
+print (c1.cpu,c1.ram)
+print(c2.cpu,c2.ram)
+
+*****************************__init__ case4: to compare a value*************************
+
+class computer:
+    def __init__(self,cpu,ram):
+        self.cpu = cpu
+        self.ram = ram
+    def compare(self,other):
+        if self.ram == other.ram:
+            return True
+
+c1 = computer('i5',16)
+c2 = computer('i10',32)
+
+print (c1.cpu,c1.ram)
+print(c2.cpu,c2.ram)
+
+if c1.compare(c2):
+    print("SAMMMMMMMMMMMMMMMMMMMMMME")
+else:
+    print("DIFFERENT")
+
+#############################################################################################################################
+
+
+*****************PALINDROME***********************
+
+//STRING - using slicing method
+
+string = input("Enter the string:")
+rev_string = string[::-1]
+print("Reversed String:",rev_string)
+if string == rev_string:
+    print("IT IS A PALINDROME")
+else:
+    print("IT is not a palindrome")
+
+//Integer - Slicing will not work in Integer, so convert the Integer to String 
+
+number = int(input("Enter the Number to check if it is palindrome: "))
+"""To convert Interger to string"""
+string = str(number)
+rev_string = string[::-1]
+print("Reversed Number:",rev_string)
+if string == rev_string:
+    print("IT IS A PALINDROME")
+else:
+    print("IT is not a palindrome")
+
+
+#######################################################
+
+Program for creation of Password:
+
+x = input("Enter the Password to create: ")
+first = str(x)
+if len(first) < 8:
+    print("Password should be more than 8 characters")
+else:
+    y = input("Enter the password to confirm: ")
+    if(x!=y):
+        print("Entered passwords are not matching, please try again")
+    else:
+        print("PASSWORD HAS BEEN CREATED !!")
+
+
+############################################################################
+
+*****************Types of variables**************************
+
+class car:
+    wheels = 5  // Class/static Variable and namespace
+
+    def __init__(self):
+        self.milage = 8                  // Instance variable and namespace
+        self.company ='Skoda'            // Instance variable and namespace
+
+c1 = car()
+c2 = car()
+
+car.wheels = 8
+print(c1.milage, c1.company, c1.wheels)
+print(c2.milage, c2.company, c2.wheels)
+
+
+############################################################################
+
+
+**************************Tyes of methods*******************************
+
+class student:
+    school = "St.Pauls"							      """class methods"""
+    def __init__(self, m1, m2, m3):
+        self.m1=m1
+        self.m2=m2
+        self.m3=m3
+    def avg(self):									 """Instance method - as it is work with self object and instance variables"""
+        return (self.m1+self.m2+self.m3)/3
+    def get_m2(self):                                """accessor method - get the values"""
+        """accessor methods"""
+        return self.m2
+    def set_m1(self,value):						     """mutator method - set the values"""
+        self.m1 = value
+        """mutator methods"""
+    @classmethod									  """ decorators with class method"""
+    def getschool(cls):									""" Define the class"""
+        return cls.school
+    @staticmethod									  """ decorators with static method"""
+    def info():												"""will not use any class variables or object"""
+        print("This is a Student class......")
+s1 = student(99,92,93)
+s2 = student(49,89,93)
+
+s2.set_m1(100)
+
+print(s1.m1,s1.m2,s1.m3)
+print(s2.m1,s2.m2,s2.m3)
+print(s1.get_m2())
+print(s1.avg())
+print(student.getschool())
+student.info()
+
+
+############################################################################
+
+************************CLASS INSIDE A CLASS**************************************
+
+class student:
+    def __init__(self, name,rollno):
+        self.name = name
+        self.rollno = rollno
+        self.lap = self.laptop()
+    def show(self):
+        print(self.name, self.rollno)
+        self.lap.show()
+    class laptop:
+        def __init__(self):
+            self.brand='HP'
+            self.config='i7'
+            self.ram=8
+        def show(self):
+            print(self.brand, self.config, self.ram)
+s1 = student('Jaya', 3)
+s2 = student('Karthi', 7)
+s1.show()
+
+print(s1.lap.brand)
+print(s2.lap.config)
+
+
+####################################################################################################
+
+**************INHERITANCE(Parent/super class and child/sub class _ SINGLE LEVEL***************************
+
+class A:
+    def feature1(self):
+        print('Feature1 is working')
+
+class B(A):
+    def feature2(self):
+        print('Feature2 is working')
+a1 = A()
+b1 = B()
+
+a1.feature1()
+b1.feature1()
+b1.feature2()
+
+*****************************INHERITANCE _ MULTI LEVEL (super class/sub class/subclass of sub classs)*********************************
+
+
+class A:
+    def feature1(self):
+        print('Feature1 is working')
+
+class B(A):
+    def feature2(self):
+        print('Feature2 is working')
+class C(B):
+    def feature3(self):
+        print('Feature3 is working')
+
+a1 = A()
+b1 = B()
+c1 = C()
+
+a1.feature1()
+b1.feature1()
+b1.feature2()
+c1.feature1()
+c1.feature2()
+c1.feature3()
+
+
+*****************************INHERITANCE _ MULTIPLE LEVEL ********************************
+
+class A:
+    def feature1(self):
+        print('Feature 1 is working')
+"""SINGLE LEVEL INHERITANCE"""
+class B(A):
+    def feature2(self):
+        print('Feature 2 is working')
+"""MULTI-LEVEL INHERITANCE"""
+class C(B):
+    def feature3(self):
+        print('Feature 3 is working')
+"""MULTIPLE LEVEL INHERITANCE"""
+class D:
+    def feature4(self):
+        print('Feature 4 is working')
+class E:
+    def feature5(self):
+        print('Feature 5 is working')
+class F(D,E):
+    def feature6(self):
+        print('Feature 6 is working')
+a1 = A()
+b1 = B()
+c1 = C()
+f1 = F()
+
+a1.feature1()
+b1.feature1()
+b1.feature2()
+c1.feature1()
+c1.feature2()
+c1.feature3()
+f1.feature4()
+f1.feature5()
+f1.feature6()
+
+
+
+####################################################################################################
+
+************** CONSTRUCTOR IN INHERITANCE ***************************
+
+
+
+class A:
+    def __init__(self):
+        print('INIT AAAAAAA')
+    def feature1(self):
+        print('Feature 1 is working')
+
+class B():
+    def __init__(self):
+        print('INIT BBBBBBB')
+    def feature2(self):
+        print('Feature 2 is working')
+
+class C(B,A):
+    def __init__(self):
+        super().__init__()
+        print('INIT CCCCCC')
+    def feature3(self):
+        print('Feature 3 is working')
+
+a1 = A()
+print('\n')
+b1 = B()
+print('\n')
+c1 = C()
+print('\n')
+
+
+print('\n')
+a1.feature1()
+c1.feature1()
+
+
+
+####################################################################################################
+
+************** CONSTRUCTOR IN INHERITANCE (Calling the Variables) ***************************
+
+
+class A:
+    def __init__(self):
+        print('INIT AAAAAAA')
+    def feature1(self):
+        print('Feature 1 AA is working')
+
+class B():
+    def __init__(self):
+        print('INIT BBBBBBB')
+    def feature1(self):
+        print('Feature 1 BB is working')
+
+class C(B,A):
+    def __init__(self):
+        super().__init__()
+        print('INIT CCCCCC')
+    def feature3(self):
+        print('Feature 3 is working')
+
+a1 = A()
+print('\n')
+b1 = B()
+print('\n')
+c1 = C()
+print('\n')
+
+c1.feature1()
+
+
+
+
+#####################################################################################################################
+
+*************************** Duck Typing in Polymorphism *************************************************************
+
+
+
+class PyCharm:
+    def execute(self):
+        print("Compiling")
+        print("Runing")
+
+class Myeditior:
+    def execute(self):
+        print("Spell Check")
+        print("Convention Check")
+        print("Compiling")
+        print("Runing")
+
+class Laptop:
+    def code(self,ide):
+        ide.execute()
+
+ide=PyCharm()
+ide=Myeditior()
+lap1=Laptop()
+lap1.code(ide)
+
+
+#####################################################################################################################
+
+*************************** Operator Overloading  in Polymorphism *************************************************************
+
+
+
+
+class student:
+    def __init__(self,m1,m2):
+        self.m1=m1
+        self.m2=m2
+
+    def __add__(self,other):
+        m1=self.m1+other.m1
+        m2=self.m2+other.m2
+        s3= student (m1,m2)
+
+        return s3
+
+    def __gt__(self, other):
+        R1=self.m1+self.m2
+        R2=other.m1+other.m2
+        if R1>R2:
+            return True
+        else:
+            return False
+
+    def __str__(self):
+        return self.m1,self.m2
+
+    def __str__(self):
+        return'{} {}'.format(self.m1,self.m2)
+
+s1=student(55,66)
+s2=student(77,88)
+
+s3 = s1 + s2
+
+
+if s1>s2:
+    print ("s1 Wins")
+else:
+    print ("s2 Wins")
+
+x = 9
+print(x.__str__())
+
+print(s1.__str__())
+
+print(s1)
+print(s2)
+
+
+
+
+
+#####################################################################################################################
+
+*************************** Method Overloading  in Polymorphism/ Python *************************************************************
+
+
+
+class student:
+    def __init__(self,m1,m2,m3):
+        self.m1 = m1
+        self.m2 = m2
+        self.m3 = m3
+
+    def sum(self, a=None, b=None, c=None):
+        s=0
+        if a != None and b != None and c != None:
+            s=a+b+c
+        elif a != None and b != None:
+            s=a+b
+        else:
+            s=a
+        return s
+
+s1=student(55,66,77)
+
+print(s1.sum(66,11,22))
+
+
+
+
+***************************  Method Overriding  in Polymorphism/ Python *************************************************************
+
+class A:
+    def show(self):
+        print("in A Show")
+
+class B:
+    def show(self):
+        print("in B Show")
+
+a1=B()
+a1.show()
+
+
+
+#####################################################################################################################
+
+*************************** Exception Handling in Python *************************************************************
+
+
+
+
+a = 9
+b = 0
+
+try:
+    print ("Resource Open")
+    print(a/b)
+    k=int(input("Enter the number : "))
+    print(k)
+
+except ZeroDivisionError as e:
+    print("Hey, you cannot divide a number by zero...", e)
+except ValueError as e:
+    print ("Invalid Input")
+except Exception as e:
+    print ("Something went wrong...", e)
+
+finally:
+    print ("Resource Closed")
+
+
+
+
+
+*************************** Multi Threading in Python (To have all execution in Parallel)*************************************************************
+
+
+
+from time import sleep
+from threading import *
+
+class Hello(Thread):
+    def run(self):
+        for i in range (5):
+            print ("Hello")
+            sleep(0.5)
+
+class Hi(Thread):
+    def run(self):
+        for i in range (5):
+            print ("Hi")
+            sleep(0.5)
+
+
+t1 = Hello()
+t2 = Hi()
+
+
+
+t1.start()
+sleep(0.2)
+t2.start()
+
+t1.join()
+t2.join()
+
+print("Bye")
+
+
+
+
+#####################################################################################################################
+
+*************************** File Handling in Python *************************************************************
+
+
+
+
+f = open('MyData.txt',"r")
+print(f.read())
+
+
+print('\n ###### Next Program Read only one Line #########')
+
+
+f = open('MyData.txt',"r")
+print(f.readline())
+
+
+print('\n ###### Next Program Read first to lines #########')
+
+
+f = open('MyData.txt',"r")
+print(f.readline())
+print(f.readline())
+
+
+print('\n ###### Next Program Read first to lines without Lines Spaces #########')
+
+
+f = open('MyData.txt',"r")
+print(f.readline(), end="")
+print(f.readline())
+
+
+print('\n ###### Next Program Read all lines from the file and Print in the same Line #########')
+
+
+f = open('MyData.txt',"r")
+print(f.readlines())
+
+
+print('\n ###### Next Program Read all lines from the file in One by One #########')
+
+
+f = open('MyData.txt',"r")
+for data in f:
+    print(data)
+
+
+
+print('\n ###### Next Program to copy a data from a file to a new File #########')
+
+
+f = open('MyData.txt',"r")
+f1 = open('abc.txt', 'w')
+for data in f:
+    f1.write(data)
+f1 = open('abc.txt', 'a')
+f1.write('\nMay Native is Marthandam, Kanyakumari District')
+f1.write('\nI am Married')
+
+print('\n Note: Please remember that if you want to write something in existing program use append "a"')
+print('\n Note: If write something in existing program with write "w" then the existing data will be erases and only the date you write will be there in the file')
+
+
+print('\n ###### Next Program to write additional data in a existing File #########')
+
+
+f = open('MyData.txt',"r")
+f1 = open('abc.txt', 'a')
+f1.write('\nMay Native is Marthandam, Kanyakumari District')
+f1.write('\nI am Married')
+
+
+
+print('\n ###### Next Program to Print the data of Image file #########')
+
+print('\n Note: Data of Image file will be in Binaryformat so use "rb" to read the image file')
+
+f = open('2X8A0238.JPG',"rb")
+for i in f:
+    print(i)
+
+
+print('\n ###### Next Program to Copy Image file into a new Image #########')
+
+print('\n Note: Data of Image file will be in Binaryformat so use "rb" to rad the image file')
+
+f = open('2X8A0238.JPG',"rb")
+f1 = open('My_Marriage_Photo.JPG',"wb")
+for i in f:
+    f1.write(i)
+
+
+
+print('\n ###### Next Program to write additional data in a existing File #########')
+
+
+f = open('MyData.txt',"r")
+f1 = open('abc.txt', 'a')
+f1.write('\nMay Native is Marthandam, Kanyakumari District')
+f1.write('\nI am Married')
+
+
+
+
+print('\n ###### Next Program to copy data from existing file and write additional data in a existing File #########')
+
+
+f = open('MyData.txt',"r")
+f1 = open('abc.txt', 'a')
+for data in f:
+    f1.write(data)
+f1.write('\nMay Native is Marthandam, Kanyakumari District---2')
+f1.write('\nI am Married---2')
+
+
+
+
+
+
+
+
+####################################################################################################
+
+************** Linear Search using Python using while Loop ***************************
+
+
+
+
+Pos = -1
+def search (list, n):
+    i = 0
+    while i < len(list):
+        if list[i] == n:
+            globals()["pos"] = i
+            return True
+        i = i + 1
+    return False
+
+list = [5,8,7,6,9,3]
+n = 9
+if search (list,n):
+    print ("Found at",pos+1)
+else:
+    print ("Not Found")
+
+
+
+
+
+
+
+
+
+
+************** Linear Search using Python using for Loop ***************************
+
+
+
+
+
+
+
+
+
+
+
+
+####################################################################################################
+
+************** Binary Search using Python using for Loop ***************************
+
+
+
+
+Pos = -1
+def search (list, n):
+    l = 0
+    u = len(list) - 1
+    while l <= u:
+        mid = (l+u) // 2
+        if list[mid] == n:
+            globals()["pos"] = mid
+            return True
+        else:
+            if list [mid] < n:
+                l = mid + 1
+            else:
+                l = mid - 1
+    return False
+
+list = [4,7,8,12,45,99]
+n = 45
+if search (list,n):
+    print ("Found at",pos+1)
+else:
+    print ("Not Found")
+
+
+
+
+
+####################################################################################################
+
+************** Bubble Sort using Python ***************************
+
+
+
+def sort(nums):
+    for i in range (len(nums)-1,0,-1):
+        for j in range (i):
+            if nums[j] > nums[j+1]:
+                temp = nums[j]
+                nums[j] = nums[j+1]
+                nums[j+1] = temp
+
+nums = [5,3,8,6,7,2]
+sort(nums)
+print(nums)
+
+
+
+
+
+
+
+####################################################################################################
+
+************** Selection Sort in Python ***************************
+
+
+
+def sort(nums):
+    for i in range (len(nums)-1):
+        minpos = i
+        for j in range (i,(len(nums))):
+            if nums[j] < nums[minpos]:
+                minpos = j
+        temp = nums[i]
+        nums[i] = nums[minpos]
+        nums[minpos] = temp
+
+        print(nums)
+
+nums = [5,3,8,6,7,2]
+sort(nums)
+print(nums)
+
+
+
+
+####################################################################################################
+
+**************************** MySQL  *****************************************
+
+MySQL User Name : Karthick
+MySQL User Name : Jayapavithra
+
+MySQL User Password : Zaq12wsx@2007
+
+
+**************************** Creating database in MySQL  *********************************
+
+show databases;
+
+create database Test2;
+
+use Test2;
+
+create table student(name varchar(21), college varchar(21));
+
+insert into student values ('Jaya','Karunya'), ('Karthick','Rajaas');
+
+select * from student;
+
+
+
+####################################################################################################
+
+**************************** Python Database Connectivity | Listing all the Databases *****************************************
+
+
+import mysql.connector
+
+mydb = mysql.connector.connect(host='localhost',user='Karthick',passwd='Zaq12wsx@2007')
+
+
+mycursor = mydb.cursor()
+
+mycursor.execute("show databases")
+
+for i in mycursor:
+	print(i)
+
+
+
+
+
+**************************** Python Database Connectivity | Fetching the Database Output *****************************************
+
+
+import mysql.connector
+
+
+mydb = mysql.connector.connect(host='localhost',user='Karthick',passwd='Zaq12wsx@2007',database='test3')
+mycursor = mydb.cursor()
+
+mycursor.execute('select * from student')
+
+for i in mycursor:
+	print(i)
+
+
+
+
+**************************** Python Database Connectivity | Fetching the output from Result saved from Database  *****************************************
+
+
+import mysql.connector
+
+
+mydb = mysql.connector.connect(host='localhost',user='Karthick',passwd='Zaq12wsx@2007',database='test3')
+mycursor = mydb.cursor()
+
+mycursor.execute('select * from student')
+
+result = mycursor.fetchall()
+
+for i in result:
+	print(i)
+
+
+
+**************************** Python Database Connectivity | Fetching the single output from Result saved from Database *****************************************
+
+
+import mysql.connector
+
+
+mydb = mysql.connector.connect(host='localhost',user='Karthick',passwd='Zaq12wsx@2007',database='test3')
+mycursor = mydb.cursor()
+
+mycursor.execute('select * from student')
+
+result = mycursor.fetchone()
+
+for i in result:
+	print(i)
+
+
+
+
+####################################################################################################
+
+**************************** Python | Git | Pycharm | Git Hub *****************************************
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
